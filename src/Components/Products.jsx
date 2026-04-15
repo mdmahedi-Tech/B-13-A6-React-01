@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Check } from 'lucide';
-const Products = ({card}) => {
-    console.log(card)
+const Products = ({card,cart,setcart}) => {
+   // console.log(cart)
+ const [buy,setbuy]=useState(false)
+
+//  btn handle function
+const halndlebuyebt=()=>{
+  //console.log(card)
+  // const filterdcard=cart.filter(item=>item.id===card.id)
+   //console.log(filterdcard)
+  //  setcart([...cart,filterdcard])
+  //  console.log(cart)
+  setcart([...cart,card])
+   setbuy(true)
+}
     return (
         <>
         <div >
@@ -19,7 +31,8 @@ const Products = ({card}) => {
     <p>{card.tag}</p>
     <p>{card.tagType}</p>
     {/* <p>{card.features}</p> */}
-    <button className="btn btn-primary w-full">Buy Now</button>
+    <button onClick={()=>halndlebuyebt()}
+    className="btn btn-primary w-full">{buy===true ? 'added':'buy now'}</button>
     <div className="card-actions justify-end">
       
     </div>

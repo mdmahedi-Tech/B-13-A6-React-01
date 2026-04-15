@@ -2,9 +2,9 @@ import React, { use, useState } from 'react';
 import Cart from './Cart';
 import Products from './Products';
 
-const Allcards = ({fetchPromise}) => {
+const Allcards = ({fetchPromise,cart,setcart}) => {
     const allCards=use(fetchPromise)
-    console.log(allCards)
+    //console.log(allCards)
    const [btn,setbtn]=useState('products')
     return (
     //   title and button is design here
@@ -35,9 +35,11 @@ const Allcards = ({fetchPromise}) => {
        {
         btn === 'products' ?  <div className='container mx-auto  grid grid-cols-3 gap-4'>
        {
-        allCards.map(card=><Products card={card}></Products>)
+        allCards.map(card=><Products card={card} cart={cart}setcart={setcart}>
+            
+        </Products>)
        }
-       </div> :( <Cart></Cart>)
+       </div> :( <Cart cart={cart}setcart={setcart}></Cart>)
        }
       
       
