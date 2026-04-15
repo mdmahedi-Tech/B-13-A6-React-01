@@ -1,0 +1,131 @@
+[
+  {
+    "id": 1,
+    "name": "Starter",
+    "description": "Essential features for individuals beginning their fitness journey.",
+    "price": 1500,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Access to gym floor",
+      "Standard locker access",
+      "1 Fitness assessment",
+      "Mobile app access"
+    ],
+    "icon": "https://img.icons8.com/ios/50/dumbbell.png"
+  },
+  {
+    "id": 2,
+    "name": "Pro Athlete",
+    "description": "The most balanced plan for consistent training and performance.",
+    "price": 2800,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "24/7 unlimited access",
+      "All group classes",
+      "Sauna & Steam room",
+      "2 Guest passes per month"
+    ],
+    "icon": "https://img.icons8.com/ios/50/muscle.png"
+  },
+  {
+    "id": 3,
+    "name": "Elite Performance",
+    "description": "Full-scale premium experience with dedicated support.",
+    "price": 30000,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Personal trainer assigned",
+      "Custom nutrition plan",
+      "Complimentary laundry",
+      "Priority equipment booking",
+      "Private VIP locker"
+    ],
+    "icon": "https://img.icons8.com/ios/50/trophy.png"
+  },
+  {
+    "id": 4,
+    "name": "Weekend Warrior",
+    "description": "Access specifically for those who can only train on weekends.",
+    "price": 1200,
+    "period": "monthly",
+    "tag": "Flexible",
+    "tagType": "new",
+    "features": [
+      "Friday to Sunday access",
+      "All weekend classes",
+      "Cardio zone access",
+      "Shower facilities"
+    ],
+    "icon": "https://img.icons8.com/ios/50/calendar.png"
+  },
+  {
+    "id": 5,
+    "name": "Student Basic",
+    "description": "Affordable fitness access for students with valid ID.",
+    "price": 1000,
+    "period": "monthly",
+    "tag": "Student Deal",
+    "tagType": "popular",
+    "features": [
+      "Off-peak hours access",
+      "Free Wi-Fi in lounge",
+      "Group study/fitness area",
+      "Standard locker access"
+    ],
+    "icon": "https://img.icons8.com/ios/50/student-female.png"
+  },
+  {
+    "id": 6,
+    "name": "Transformation 90",
+    "description": "A high-intensity 3-month plan focused on results.",
+    "price": 12000,
+    "period": "one-time",
+    "tag": "Goal Based",
+    "tagType": "best seller",
+    "features": [
+      "90 days unlimited access",
+      "Weekly body composition",
+      "HIIT class priority",
+      "Custom workout plan"
+    ],
+    "icon": "https://img.icons8.com/ios/50/fire-element.png"
+  },
+  {
+    "id": 7,
+    "name": "Corporate Group",
+    "description": "Discounted access for teams of 5 or more employees.",
+    "price": 2000,
+    "period": "monthly",
+    "tag": "Business",
+    "tagType": "new",
+    "features": [
+      "Team training sessions",
+      "Quarterly health seminar",
+      "Towel service included",
+      "Company progress reports"
+    ],
+    "icon": "https://img.icons8.com/ios/50/conference-call.png"
+  },
+  {
+    "id": 8,
+    "name": "Vitality Senior",
+    "description": "Safe and effective training for members aged 60 and above.",
+    "price": 1100,
+    "period": "monthly",
+    "tag": "Community",
+    "tagType": "popular",
+    "features": [
+      "Mobility & Yoga classes",
+      "Pool access included",
+      "Social lounge access",
+      "Monthly health checkup"
+    ],
+    "icon": "https://img.icons8.com/ios/50/walking.png"
+  }
+]
