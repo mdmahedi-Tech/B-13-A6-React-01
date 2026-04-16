@@ -2,7 +2,7 @@ import React from 'react';
 import { ShoppingCart } from 'lucide-react';
 const Nabbar = ({cart}) => {
     return (
-        <div className='container mx-auto strick'>
+        <div className='container mx-auto sticky top-0 z-0'>
             <div className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start">
     <div className="dropdown">
@@ -43,8 +43,8 @@ const Nabbar = ({cart}) => {
   </div>
   <div className="navbar-end">
      <a className="btn"> {cart.length}<ShoppingCart /></a>
-    <a className="btn">login</a>
-    <a className="btn  btn-primary">Button</a>
+    <a className="btn ">login</a>
+    <a className="btn  btn-primary bg-gradient-to-r from-blue-950 to-blue-500 ">Button</a>
   </div>
 </div>
         </div>

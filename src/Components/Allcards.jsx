@@ -23,11 +23,11 @@ const Allcards = ({fetchPromise,cart,setcart}) => {
          
          <button onClick={()=>setbtn('products')}
        
-         className={`btn btn-ghost ${btn === 'products' ? 'bg-gradient-to-r from-orange-600 to-orange-300 ':''}`}>
+         className={`btn btn-ghost ${btn === 'products' ? 'bg-gradient-to-r from-blue-950 to-blue-500  ':''}`}>
             products</button>
 
          <button onClick={()=>setbtn('carts')}
-          className={`btn ghost ${btn === 'carts' ? 'bg-gradient-to-r from-orange-600 to-orange-300 ':''}`}>
+          className={`btn ghost ${btn === 'carts' ? 'bg-gradient-to-r from-blue-950 to-blue-500 ':''}`}>
            carts({cart.length})</button>
          
          

@@ -54,7 +54,7 @@
     "description": "Access specifically for those who can only train on weekends.",
     "price": 1200,
     "period": "monthly",
-    "tag": "Flexible",
+    "tag": "Popular",
     "tagType": "new",
     "features": [
       "Friday to Sunday access",
@@ -86,7 +86,7 @@
     "description": "A high-intensity 3-month plan focused on results.",
     "price": 12000,
     "period": "one-time",
-    "tag": "Goal Based",
+    "tag": "new",
     "tagType": "best seller",
     "features": [
       "90 days unlimited access",
@@ -102,7 +102,7 @@
     "description": "Discounted access for teams of 5 or more employees.",
     "price": 2000,
     "period": "monthly",
-    "tag": "Business",
+    "tag": "popular",
     "tagType": "new",
     "features": [
       "Team training sessions",

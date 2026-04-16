@@ -1,5 +1,6 @@
 import { Check } from 'lucide-react';
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const Products = ({card,cart,setcart}) => {
    // console.log(cart)
@@ -12,6 +13,7 @@ const halndlebuyebt=()=>{
    //console.log(filterdcard)
   //  setcart([...cart,filterdcard])
   //  console.log(cart)
+  toast.success('card added')
   setcart([...cart,card])
    setbuy(true)
 }
@@ -19,10 +21,11 @@ const halndlebuyebt=()=>{
         <>
         <div >
            <div className=" card bg-base-100 shadow-sm">
-  <figure>
+  <figure className='flex justify-between9'>
     <img
       src={card.icon}
       alt="Shoes" />
+      <p>{card.tag}</p>
   </figure>
   <div className="card-body">
     <h2 className="card-title">{card.name}</h2>
@@ -33,7 +36,7 @@ const halndlebuyebt=()=>{
     <p className='flex'> <Check />{card.tagType}</p>
     {/* <p>{card.features}</p> */}
     <button onClick={()=>halndlebuyebt()}
-    className="btn btn-primary w-full">{buy===true ? 'added':'buy now'}</button>
+    className="btn bg-gradient-to-r from-blue-950 to-blue-500 text-white w-full">{buy===true ? 'added':'buy now'}</button>
     <div className="card-actions justify-end">
       
     </div>

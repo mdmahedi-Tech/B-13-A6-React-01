@@ -38,6 +38,7 @@ function App() {
   <Transparence></Transparence>
   <WorkFlow></WorkFlow>
   <Footer></Footer>
+   {/* <ToastContainer /> */}
    </>
   )
 }

@@ -25,10 +25,11 @@ const Banner = () => {
                 <img src={image} alt="" />
             </div>
         </div>
-        <div className=' bg-blue-700 text-white container mx-auto flex items-center 
-        justify-around gap-4 py-6'>
+        <div className=' btn bg-gradient-to-r from-blue-950 to-blue-500  text-white container mx-auto 
+        flex items-center 
+        justify-around gap-4 py-25'>
             <div className=''>
-              <p className='text-4xl font-bold'>500k</p>
+              <p className='text-4xl font-bold'>500k+</p>
               <p className='opacity-80'>Active status</p>
             </div>
             <div className=''>

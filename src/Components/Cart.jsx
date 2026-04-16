@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { toast } from 'react-toastify';
 const Cart = ({cart,setcart}) => {
     console.log(cart)
 
@@ -9,12 +10,15 @@ const Cart = ({cart,setcart}) => {
     // to all clear
     const handleprocessing=()=>{
        setcart([])
+        toast.success('payment succesfull')
     }
     // to delete card
     const handledelete=(cards)=>{
         
         const filterdcard=cart.filter(n=>n.id !== cards.id)
         setcart(filterdcard)
+        
+        toast.error('romove card')
     }
     return (
         
@@ -23,8 +27,8 @@ const Cart = ({cart,setcart}) => {
         <div className='container mx-auto'>
             
             {
-                cart.map(c=><div className='flex justify-between 
-                items-center px-8 py-4 border' >
+                cart.map(c=><div className=''>
+                    <div className='flex justify-between items-center px-8 py-4 my-4 shadow-xl' >
                     <div className='flex items-center gap-4'>
                     <img className='w-40 h-40' src={c.icon} alt="" />
                     <div>
@@ -32,9 +36,13 @@ const Cart = ({cart,setcart}) => {
                         <p className='font-bold'>${c.price}</p>
                     </div>
                     </div>
-                    <button onClick={()=>handledelete(c)}
-                     className='btn btn-error'>delete</button>
-                </div>)
+                   <div>
+                     <button onClick={()=>handledelete(c)}
+                     className='btn btn-error text-right'>delete</button>
+                   </div>
+                </div>
+                </div>
+                )
             }
             <div>
                 <div className='flex justify-between items-center px-6 py-3'>
@@ -44,7 +52,7 @@ const Cart = ({cart,setcart}) => {
             </div>
             <div>
             <button onClick={()=>handleprocessing()}
-             className='btn bg-blue-900 w-full rounded-xl'>procecing</button>
+             className='btn bg-gradient-to-r from-blue-950 to-blue-500 w-full rounded-xl'>Proceed to Checkout</button>
            </div>
         </div>
         
