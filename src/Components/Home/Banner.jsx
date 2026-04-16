@@ -100,10 +100,7 @@ const Banner = () => {
                 </div>
             </div>
         </div>
-        {/* transparen section */}
-        <div>
-
-        </div>
+        
         </>
     
     );

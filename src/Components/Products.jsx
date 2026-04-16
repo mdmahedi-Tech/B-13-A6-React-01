@@ -1,5 +1,6 @@
+import { Check } from 'lucide-react';
 import React, { useState } from 'react';
-import { Check } from 'lucide';
+
 const Products = ({card,cart,setcart}) => {
    // console.log(cart)
  const [buy,setbuy]=useState(false)
@@ -20,16 +21,16 @@ const halndlebuyebt=()=>{
            <div className=" card bg-base-100 shadow-sm">
   <figure>
     <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      src={card.icon}
       alt="Shoes" />
   </figure>
   <div className="card-body">
     <h2 className="card-title">{card.name}</h2>
     <p>{card.description}</p>
     <p className='font-bold text-2xl'>${card.price}</p>
-    <p>{card.period}</p>
-    <p>{card.tag}</p>
-    <p>{card.tagType}</p>
+    <p className='flex'><Check />{card.period}</p>
+    <p className='flex'><Check />{card.tag}</p>
+    <p className='flex'> <Check />{card.tagType}</p>
     {/* <p>{card.features}</p> */}
     <button onClick={()=>halndlebuyebt()}
     className="btn btn-primary w-full">{buy===true ? 'added':'buy now'}</button>

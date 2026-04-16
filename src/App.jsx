@@ -4,6 +4,9 @@ import Nabbar from './Components/Home/Nabbar'
 import Banner from './Components/Home/Banner'
 import Allcards from './Components/Allcards'
 import { Suspense, useState } from 'react'
+import Transparence from './Components/Home/Transparence'
+import Footer from './Components/Home/Footer'
+import WorkFlow from './Components/Home/WorkFlow'
 
 function App() {
   const fetchData=async()=>{
@@ -19,7 +22,7 @@ function App() {
   return (
      <>
     
-   <Nabbar></Nabbar>
+   <Nabbar cart={cart}></Nabbar>
    <Banner></Banner>
    
     {/* tabs start */}
@@ -32,7 +35,9 @@ function App() {
 
    </Allcards>
    </Suspense>
-  
+  <Transparence></Transparence>
+  <WorkFlow></WorkFlow>
+  <Footer></Footer>
    </>
   )
 }
