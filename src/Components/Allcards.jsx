@@ -33,7 +33,7 @@ const Allcards = ({fetchPromise,cart,setcart}) => {
          
        </div>
        {
-        btn === 'products' ?  <div className='container mx-auto  grid grid-cols-3 gap-4'>
+        btn === 'products' ?  <div className='container mx-auto  grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
        {
         allCards.map(card=><Products card={card} cart={cart}setcart={setcart}>
             

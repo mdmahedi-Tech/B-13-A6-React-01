@@ -21,7 +21,7 @@ const halndlebuyebt=()=>{
         <>
         <div >
            <div className=" card bg-base-100 shadow-sm">
-  <figure className='flex justify-between9'>
+  <figure className='flex justify-between'>
     <img
       src={card.icon}
       alt="Shoes" />

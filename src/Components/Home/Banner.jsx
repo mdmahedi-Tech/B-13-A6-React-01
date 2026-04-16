@@ -25,8 +25,9 @@ const Banner = () => {
                 <img src={image} alt="" />
             </div>
         </div>
-        <div className=' btn bg-gradient-to-r from-blue-950 to-blue-500  text-white container mx-auto 
-        flex items-center 
+        <div className=' btn bg-gradient-to-r from-blue-950 to-blue-500
+          text-white container mx-auto 
+        grid md:grid-cols-2 lg:grid-cols-3
         justify-around gap-4 py-25'>
             <div className=''>
               <p className='text-4xl font-bold'>500k+</p>
@@ -42,12 +43,12 @@ const Banner = () => {
             </div>
         </div>
         {/* section get started */}
-        <div className='py-10'>
+        <div className='py-10 '>
             <div className='header text-center mb-5'>
                 <h1 className='text-4xl font-bold'>Get Started in 3 Steps</h1>
                 <p className='opacity-80'>Start using premium digital tools in minutes, not hours.</p>
             </div>
-            <div className='cardcontainer grid grid-cols-3'>
+            <div className='cardcontainer  grid md:grid-cols-2 lg:grid-cols-3'>
                 <div>
                     <div className="card bg-base-100 w-96 shadow-sm">
                     <figure className="px-10 pt-10">
