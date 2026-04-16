@@ -2,7 +2,7 @@ import React from 'react';
 
 const WorkFlow = () => {
     return (
-        <div className='text-center bg-blue-600 py-15  text-white 
+        <div className='text-center bg-gradient-to-r from-blue-950 to-blue-500 py-15  text-white 
         space-y-4 mt-14'>
             <h1 className='text-3xl font-bold'>Ready to Transform Your Workflow?</h1>
             <p className='opacity-80'>Join thousands of professionals who are already using Digitools to work smarter.</p>
