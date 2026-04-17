@@ -20,7 +20,7 @@ const Transparence = () => {
     <p>Community support</p>
     <p>1 project per month</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary w-full">Buy Now</button>
+      <button className="btn btn-primary w-full">Get Started Free</button>
     </div>
   </div>
 </div>
@@ -36,7 +36,7 @@ const Transparence = () => {
     <p>Community support</p>
     <p>1 project per month</p>
     <div className="card-actions justify-end">
-      <button className="btn w-full bg-white">Buy Now</button>
+      <button className="btn w-full bg-white">Start Pro Trial</button>
     </div>
   </div>
 </div>
@@ -52,7 +52,7 @@ const Transparence = () => {
     <p>Community support</p>
     <p>1 project per month</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary w-full">Buy Now</button>
+      <button className="btn btn-primary w-full">Contact Sales</button>
     </div>
   </div>
 </div>

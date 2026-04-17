@@ -52,7 +52,7 @@ const Cart = ({cart,setcart}) => {
             </div>
             <div>
             <button onClick={()=>handleprocessing()}
-             className='btn bg-gradient-to-r from-blue-950 to-blue-500 w-full rounded-xl'>Proceed to Checkout</button>
+             className='btn text-white bg-gradient-to-r from-blue-950 to-blue-500 w-full rounded-xl'>Proceed to Checkout</button>
            </div>
         </div>
         
